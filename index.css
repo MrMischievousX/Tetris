@@ -120,6 +120,9 @@ h5 {
     overflow: hidden;
     background: cyan;
   }
+  h3{
+    font-weight: 700;
+  }
   #onlyPc {
     display: none;
   }
