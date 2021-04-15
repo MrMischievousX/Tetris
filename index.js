@@ -34,7 +34,7 @@ onlyPc.style.display = "none";
 disablebtn.style.display = "none";
 
 window.addEventListener("resize", function () {
-  window.location.reload();
+  //window.location.reload();
 });
 
 left.addEventListener("click", function () {
