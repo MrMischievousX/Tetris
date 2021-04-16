@@ -4,7 +4,8 @@ const sq = 30;
 const row = 20;
 const column = 20;
 const vacant = "white";
-const scoreTxt = document.querySelector(".score");
+const scoreTxt = document.querySelector("#scoreTxt");
+const scorePhone = document.querySelector("#scorePhone");
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const down = document.querySelector("#down");
@@ -34,7 +35,7 @@ onlyPc.style.display = "none";
 disablebtn.style.display = "none";
 
 window.addEventListener("resize", function () {
-  //window.location.reload();
+  // window.location.reload();
 });
 
 left.addEventListener("click", function () {
@@ -322,6 +323,7 @@ class Piece {
         points.play();
         scoreTxt.innerHTML = score;
         scoreBtn.innerHTML = score;
+        scorePhone.innerHTML = score;
       }
     }
     drawBoard();
